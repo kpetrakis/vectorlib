@@ -2,7 +2,7 @@
 
 ## Example Usage
 
-Some Basics operations:
+Some Basic Operations:
 
 ```py
 from vectorlib import Vector3D as v3d
@@ -39,7 +39,7 @@ source venv_name/bin/activate
 pip install .
 ```
 
-Note: If virtualenv is not available you can substitute:
+Note: If virtualenv is not available you can replace:
 
 ```bash
 virtualenv venv_name
