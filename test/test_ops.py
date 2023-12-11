@@ -131,3 +131,6 @@ class TestOps(unittest.TestCase):
     np.testing.assert_allclose(v3d.angle(self.r1, self.r2), v3d.angle(p, self.r1), rtol=1e-7)
     # test projecting one on the other, the angle should remain the same
     np.testing.assert_allclose(v3d.angle(self.r1,self.r2), v3d.angle(v3d.project(self.r1, self.r2), v3d.project(self.r2, self.r1)))
+
+if __name__ == "__main__":
+  unittest.main()

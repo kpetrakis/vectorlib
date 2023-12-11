@@ -67,3 +67,6 @@ class TestInitialization(unittest.TestCase):
     with self.assertRaises(Exception):
       self.v1[3] = 10
       self.v1[0:2] = []
+
+if __name__ == "__main__":
+  unittest.main()
