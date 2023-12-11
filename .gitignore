@@ -1,2 +1,3 @@
 lambda_venv/
 vectorlib/__pycache__/
+test/__pycache__/
