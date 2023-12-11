@@ -84,7 +84,7 @@ class Vector3D:
     return angle theta between vectors a, b
     NOTE: arccos is ill-conditioned for angles near 0 or pi !!!
     '''
-    theta_cos = Vector3D(a, b) / (a.norm() * b.norm())
+    theta_cos = Vector3D.dot(a, b) / (a.norm() * b.norm())
     # cliping is a bit hacky. I don't like it. But due to fp theta_cos can be > 1 and it breaks
     return np.degrees(np.arccos(theta_cos.clip(-1, 1)))
     # Didn't use it because we are told to use the dot product for angle calculation 
